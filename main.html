@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+    <link href="/public/css/style.css" rel="stylesheet">
+    <title>Cooking Blog</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/public/images/logo.jpg" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResposive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Main Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/public/files/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-caption">
+                <h1 class="display-2">The Chef's Blog</h1>
+            </div>
+            <div class="carousel-item active">
+                <img src="/public/images/salsa-queso-chedar.jpg" class="stretchy">
+            </div>
+            <div class="carousel-item">
+                <img src="/public/images/aguacates-rellenos-cangrejo.jpg" class="stretchy">
+            </div>
+            <div class="carousel-item">
+                <img src="/public/images/nuggets-pollo.jpg" class="stretchy">
+            </div>
+        </div>
+    </div>
+
+    <!--- Page Title -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Some of our favorite recipes</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img card-img-top" src="/public/images/salsa-queso-chedar.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Chedar Cheese Sauce</h4>
+                        <p class="car-text">Very few of us go to the movies and resist a creamy cheddar cheese sauce on some nachos and although today it is easy to find it in supermarkets, there is nothing that beats a homemade one. So I have decided to share this rich and simple recipe with you.</p>
+                        <a href="#" class="btn btn-outline-secondary">Read more</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img card-img-top" src="/public/images/nuggets-pollo.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Chicken Nuggets</h4>
+                        <p class="car-text">Chicken nuggets are one of the quintessential representations of fast food. Those that were born in the 50s as an academic work without a patent and that later settled in the immense fast food chains. Such has been their success that there are many brands that produce and sell them frozen, ready to heat and serve. They are not lacking in children's restaurant menus and they are not only made with chicken, but also with fish or vegetables.</p>
+                        <a href="#" class="btn btn-outline-secondary">Read more</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img card-img-top" src="/public/images/aguacates-rellenos-cangrejo.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Crab Stuffed Avocados</h4>
+                        <p class="car-text">When two delicious things come together the result is glorious and this is the case with crab stuffed avocados. Two very Ecuadorian products, the avocado from the Sierra, which is used in many dishes, and the crab from the Coast, the famous one for the great crabs, merge here and result in a spectacular dish.</p>
+                        <a href="#" class="btn btn-outline-secondary">Read more</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row text-center padding">
+            <div class="col-12">
+                <a href="#" class="btn btn-dark">View all recipes</a>
+            </div>
+        </div>
+    </div>
+
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12 paddding">
+                    <p>Proyect 2</p>
+                    <p>Members: Erick, Edgar & Regina</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
