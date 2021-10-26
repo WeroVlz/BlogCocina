@@ -61,6 +61,11 @@ html, body{
   max-height: 200px;
   object-fit: none;
 }
+
+.img{
+  max-height: 300px;
+  object-fit: contain;
+}
 .btn-primary{
   background-color: #6648b1;
   border: 1px #6648b1;
