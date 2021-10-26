@@ -2,7 +2,8 @@ const express = require("express");
 
 const app = express();
 
-app.use("/public", express.static(__dirname + '/public'));
+app.use(express.static("public"));
+app.use("/files",express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.engine('html', require('ejs').renderFile);
