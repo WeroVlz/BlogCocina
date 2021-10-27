@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <link href="css/style.css" rel="stylesheet">
+  <title>Cooking Blog</title>
+</head>
+
+<body>
+  <!--- Cards -->
+  <div class="card recipe mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/logo.jpg" class="img-fluid rounded i" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= recipeName %></h5>
+          <p class="card-text"><small class="text-muted"><%= qnpInfo %></small></p>
+          <p class="card-text"><%= ingredients %></p>
+          <p class="card-text"><%= preparation %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
+
+</html>

@@ -1,210 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    
-    <link href="css/style.css" rel="stylesheet">
-    <title>Cooking Blog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <link href="css/style.css" rel="stylesheet">
+  <title>Cooking Blog</title>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top img">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResposive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="files/main.html">Main Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="files/aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Recipes</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!--- Image Slider -->
-    <div id="slides" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#slides" data-slide-to="0"></li>
-            <li data-target="#slides" data-slide-to="1"></li>
-            <li data-target="#slides" data-slide-to="2"></li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top img">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/files/main.html"><img src="images/logo.jpg" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResposive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/files/main.html">Main Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/files/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Recipes</a>
+          </li>
         </ul>
-        <div class="carousel-inner">
-            <div class="carousel-caption">
-                <h1 class="display-2">Recipes</h1>
-            </div>
-            <div class="carousel-item active">
-                <img src="images/comida1.jpg" class="stretchy">
-            </div>
-            <div class="carousel-item">
-                <img src="images/comida2.jpg" class="stretchy">
-            </div>
-            <div class="carousel-item">
-                <img src="images/comida3.jpg" class="stretchy">
-            </div>
-        </div>
+      </div>
     </div>
+  </nav>
 
-    <!--- Page Title -->
+  <!--- Image Slider -->
+  <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-caption">
+        <h1 class="display-2">Recipes</h1>
+      </div>
+      <div class="carousel-item active">
+        <img src="images/comida1.jpg" class="stretchy">
+      </div>
+      <div class="carousel-item">
+        <img src="images/comida2.jpg" class="stretchy">
+      </div>
+      <div class="carousel-item">
+        <img src="images/comida3.jpg" class="stretchy">
+      </div>
+    </div>
+  </div>
+
+  <!--- Page Title -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">All Recipes</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <!--- Cards -->
+  <div class="card recipe mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/salsa-queso-chedar.jpg" class="img-fluid rounded i" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Chedar Cheese Sauce</h5>
+          <p class="card-text"><small class="text-muted">For 1 dip. Preparation time: 13 mins</small></p>
+          <p class="card-text">
+            INGREDIENTES:
+            1 cda de mantequilla,
+            1 cda de harina sin polvos de hornear,
+            1 tz de leche,
+            1 pizca de sal,
+            1 pizca de pimienta,
+            1/4 cdta de paprika,
+            150 grs de queso chedar.</p>
+          <p class="card-text">
+            PREPARACION:
+            1. En una olla pequeña o sartén, derretir la mantequilla, agregar la harina y revolver con batidor de
+            barilla para mezclar bien. Cocinar un par de minutos a temperatura media baja.
+            2. Agregarle la leche y condimentar con sal, pimienta y paprika, revolviendo todo el tiempo.
+            3. Por último poner el queso y seguir revolviendo hasta mezclar bien. Retirar la olla o sartén de la
+            hornilla.
+            4. Les puede parecer un poco líquida la salsa, pero a medida que se vaya enfriando se espesará.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card recipe mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/nuggets-pollo.jpg" class="img-fluid rounded i" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Nuggets</h5>
+          <p class="card-text"><small class="text-muted">For 24 nuggets. Preparation time: 20 mins</small></p>
+          <p class="card-text">
+            INGREDIENTES:
+            2 pechugas de pollo deshuesadas,
+            1 huevo grande,
+            1 cda de ajo en polvo,
+            1 cdta de orégano molido,
+            1 cdta de comino molido,
+            1-1/2 cdta de sal,
+            1/2 cdta de pimienta molida,
+            1 cda de paprika,
+            100 grs de panko (apanadura japonesa),
+            2 cdas de aceite de oliva.</p>
+          <p class="card-text">
+            PREPARACION:
+            1. Cortar el pollo en cubos y procesar hasta que quede molido. Si no tienen procesadora lo pueden picar
+            sobre una tabla con un cuchillo afilado y queda muy bien.
+            2. Poner el pollo picado en un recipiente, agregarle el huevo, los condimentos y mezclar muy bien.
+            3. Esparcir el panko en una fuente plana.
+            4. Mojarse las manos, coger montoncitos de la mezcla de pollo, pasarla por el panko, aplastarlos para formar
+            los nuggets e ir dejándolos sobre una fuente. Una vez que terminen de hacerlos los pueden refrigerar o
+            congelar.
+            5. Pre calentar el horno a 180C/350F.
+            6. Pincelar con aceite de oliva la lata para hornear los nuggets. Ponerlos con algo de distancia y si
+            prefieren, para que les queden mas dorados y crujientes, los pueden pintar por encima con un poquito de
+            aceite de oliva.
+            7. Hornearlos de 10 a 15 minutos. Darles la vuelta, encender el broil y dejarlos 5 minutos hasta que estén
+            dorados.
+            8. Servirlos enseguida con su salsa favorita. En la foto los acompañé con salsa bbq ahumada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card recipe mb-3" style="max-width: 100%; ">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/aguacates-rellenos-cangrejo.jpg" class="img-fluid rounded i" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Crab Stuffed Avocados</h5>
+          <p class="card-text"><small class="text-muted">For 4 people. Preparation time: 3 hrs 45 mins</small></p>
+          <p class="card-text">
+            INGREDIENTES:
+            3 un. de cebollas chinas, de verdeo o cebolletas,
+            Sal y pimienta al gusto,
+            Jugo de 2 limones sutiles,
+            1/2 tz de mayonesa,
+            200 g de carne de cangrejo,
+            2 cdas de perejil picado,
+            2 un de aguacates maduros pero firmes.</p>
+          <p class="card-text">
+            PREPARACION:
+            1. Picar finamente la cebolla, ponerla en un cuenco, salpimentarla y agregarle el jugo de limón.
+            2. Incorporar la mayonesa, agregar la carne de cangrejo. Mezclar bien.
+            3. Por último poner el perejil picado.
+            4. Partir los aguacates y retirarles la semilla.
+            5. Rellenar los aguacates con la mezcla de cangrejo y espolvorear con un poco más de perejil picado encima.
+            Si tienen patitas gordas de cangrejo, pongan una encima de cada aguacate.
+            6. Si van a servir como entrada individual, les sugiero poner cada aguacate relleno sobre una rodaja de
+            tomate.
+            7. En la mesa tengan limones cortados y alguna rica salsa de ají.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Add new recipe</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <form class="form-recipe" action="/" method="POST">
+    <div class="mb-3 int">
+      <label for="rName" class="form-label">Recipe name</label>
+      <input type="text" class="form-control recipei" name="rName">
+    </div>
+    <div class="mb-3 int">
+      <label for="qnpName" class="form-label">Quantity and prepation time</label>
+      <input type="text" class="form-control qnp" name="qnpName">
+    </div>
+    <div class="mb-3 int">
+      <label for="ingName" class="form-label">Ingredients</label>
+      <textarea class="form-control ingredients" name="ingName" rows="5"
+        placeholder="All the ingredients your recipe needs."></textarea>
+    </div>
+    <div class="mb-3 int">
+      <label for="preName" class="form-label">Preparation steps</label>
+      <textarea class="form-control preparation" name="preName" rows="5"
+        placeholder="All the steps that your recipe takes."></textarea>
+    </div>
+    <div class="input-group mb-3">
+      <input type="file" class="form-control imageu" name="imgFile">
+    </div>
+    <button class="btn btn-lg btn-block boton btn-dark" type="submit">Post recipe</button>
+  </form>
+
+  <!--- Footer -->
+  <footer>
     <div class="container-fluid padding">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="display-4">All Recipes</h1>
-            </div>
-            <hr>
+      <div class="row text-center padding">
+        <div class="col-12 paddding">
+          <p>Proyect 2</p>
+          <p>Members: Erick, Edgar & Regina</p>
         </div>
+      </div>
     </div>
+  </footer>
 
-    <!--- Cards -->
-    <div class="card recipe mb-3" style="max-width: 100%;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="images/salsa-queso-chedar.jpg" class="img-fluid rounded i" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Chedar Cheese Sauce</h5>
-              <p class="card-text"><small class="text-muted">For 1 dip. Preparation time: 13 mins</small></p>
-              <p class="card-text">
-                INGREDIENTS:
-                1 spn butter,
-                1 spn flour,
-                1 cp milk,
-                1 pinch salt,
-                1 pinch pepper,
-                1/4 tspn paprika,
-                150 grs cheddar cheese.</p>
-                <p class="card-text">
-                PREPARATION:
-                1. Melt butter in a small cooking pot, add flour, and mix with and egg beater. Cook for a couple of minutes at medium temperature.
-                2. Add milk, salt, pepper, and paprika while mixing the whole time.
-                3. For last, add cheese and keep mixing until it looks even. Remove pot from stove.
-                4. Let it cool down.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card recipe mb-3" style="max-width: 100%;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="images/nuggets-pollo.jpg" class="img-fluid rounded i" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Chicken Nuggets</h5>
-              <p class="card-text"><small class="text-muted">For 24 nuggets. Preparation time: 20 mins</small></p>
-              <p class="card-text">
-                INGREDIENTS:
-                2 chicken breasts,
-                1 egg,
-                1 spn garlig powder,
-                1 spn ground oregano,
-                1 spn ground cumin,
-                1-1/2 tspn salt,
-                1/2 tspn ground pepper,
-                1 spn paprika,
-                100 grms panko,
-                2 cdas de aceite de oliva.</p>
-                <p class="card-text">
-                PREPARATION:
-                1. Cortar el pollo en cubos y procesar hasta que quede molido. Si no tienen procesadora lo pueden picar sobre una tabla con un cuchillo afilado y queda muy bien.
-                2. Poner el pollo picado en un recipiente, agregarle el huevo, los condimentos y mezclar muy bien.
-                3. Esparcir el panko en una fuente plana.
-                4. Mojarse las manos, coger montoncitos de la mezcla de pollo, pasarla por el panko, aplastarlos para formar los nuggets e ir dejándolos sobre una fuente. Una vez que terminen de hacerlos los pueden refrigerar o congelar.
-                5. Pre calentar el horno a 180C/350F.
-                6. Pincelar con aceite de oliva la lata para hornear los nuggets. Ponerlos con algo de distancia y si prefieren, para que les queden mas dorados y crujientes, los pueden pintar por encima con un poquito de aceite de oliva.
-                7. Hornearlos de 10 a 15 minutos. Darles la vuelta, encender el broil y dejarlos 5 minutos hasta que estén dorados.
-                8. Servirlos enseguida con su salsa favorita. En la foto los acompañé con salsa bbq ahumada.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card recipe mb-3" style="max-width: 100%; ">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="images/aguacates-rellenos-cangrejo.jpg" class="img-fluid rounded i" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Crab Stuffed Avocados</h5>
-              <p class="card-text"><small class="text-muted">For 4 people. Preparation time: 3 hrs 45 mins</small></p>
-              <p class="card-text">
-                INGREDIENTS:
-                3 un. de cebollas chinas, de verdeo o cebolletas,
-                Sal y pimienta al gusto,
-                Jugo de 2 limones sutiles,
-                1/2 tz de mayonesa,
-                200 g de carne de cangrejo,
-                2 cdas de perejil picado,
-                2 un de aguacates maduros pero firmes.</p>
-                <p class="card-text">
-                PREPARATION:
-                1. Picar finamente la cebolla, ponerla en un cuenco, salpimentarla y agregarle el jugo de limón.
-                2. Incorporar la mayonesa, agregar la carne de cangrejo. Mezclar bien.
-                3. Por último poner el perejil picado.
-                4. Partir los aguacates y retirarles la semilla.
-                5. Rellenar los aguacates con la mezcla de cangrejo y espolvorear con un poco más de perejil picado encima. Si tienen patitas gordas de cangrejo, pongan una encima de cada aguacate.
-                6. Si van a servir como entrada individual, les sugiero poner cada aguacate relleno sobre una rodaja de tomate.
-                7. En la mesa tengan limones cortados y alguna rica salsa de ají.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid padding">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="display-4">Add new recipe</h1>
-            </div>
-            <hr>
-        </div>
-        </div>
-
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Recipe name</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" >
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Quantity and prepation time</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" >
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ingredients</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="All the ingredients your recipe needs."></textarea>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Preparation steps</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="All the steps that your recipe takes."></textarea>
-      </div>
-      <button class="btn btn-lg btn-block boton btn-dark" type="submit">Post recipe</button>
-
-    <!--- Footer -->
-    <footer>
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <div class="col-12 paddding">
-                    <p>Proyect 2</p>
-                    <p>Members: Erick, Edgar & Regina</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
 </body>
+
 </html>
+
 </html>
